@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Тестовое задание на Senior 3D Artist — Портфолио</title>
+<meta name="description" content="Тестовое задание на Senior 3D Artist. Low-poly карбидной лампы, UV и запекание Normal и AO.">
+<meta name="theme-color" content="#0f1012">
+<meta property="og:title" content="Тестовое задание на Senior 3D Artist — Портфолио">
+<meta property="og:description" content="Тестовое задание на Senior 3D Artist. Low-poly карбидной лампы, UV и запекание Normal и AO.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://positivejake.github.io/raz-grid-portfolio/assets/lamp.webp">
+<link rel="stylesheet" href="./styles.css?v=20261116-gallery">
+<script defer src="./gallery.js?v=20261116-gallery"></script>
+</head>
+<body>
+<a class="skip" href="#main">К содержимому</a>
+<header class="top" id="top">
+  <nav aria-label="Навигация"><a href="./#work">Кейсы</a><a href="./resume.html">Резюме</a><a href="./#contact">Контакты</a></nav>
+  <a href="./" class="brand">RazGrid</a>
+</header>
+<main id="main" class="section inner-page lamp-case">
+  <a class="back-link" href="./#work">Все кейсы</a>
+  <h1 class="page-title">Карбидная лампа</h1>
+
+  <section class="case-project product-intro">
+    <div class="case-copy">
+      <h2>Тестовое задание на Senior 3D Artist</h2>
+      <p>По фотореференсам нужно было смоделировать low-poly карбидную лампу и подготовить две карты, Normal и Ambient Occlusion. Я выполнил задание в срок и уложился во все технические ограничения.</p>
+    </div>
+    <div class="product-lead"><a href="./assets/lamp.webp" data-zoom><img src="./assets/lamp.webp" width="1536" height="1024" fetchpriority="high" alt="Финальный рендер карбидной лампы с текстурами"></a></div>
+  </section>
+
+  <section class="case-project case-copy">
+    <h2>Технические требования</h2>
+    <dl class="lamp-spec">
+      <div><dt>Геометрия</dt><dd>До 5 000 треугольников</dd></div>
+      <div><dt>Текстурный набор</dt><dd>Один набор, 2048 × 2048</dd></div>
+      <div><dt>Normal Map</dt><dd>OpenGL</dd></div>
+      <div><dt>AO Map</dt><dd>Без окклюзии от пола (floor occlusion)</dd></div>
+      <div><dt>Backface culling</dt><dd>Включён</dd></div>
+      <div><dt>Высота</dt><dd>20 см</dd></div>
+      <div><dt>UV-развёртка</dt><dd>Один тайл 0–1</dd></div>
+    </dl>
+  </section>
+
+  <section class="case-project case-copy">
+    <h2>Фотореференсы</h2>
+    <p>По фотографиям с трёх ракурсов восстановил пропорции корпуса, форму отражателя и мелкие детали.</p>
+    <div class="frames lamp-frames">
+      <a href="./assets/lamp-reference.webp" data-zoom><img src="./assets/lamp-reference.webp" width="452" height="591" loading="lazy" alt="Фотореференс карбидной лампы в ракурсе три четверти"></a>
+      <a href="./assets/lamp-reference-side.webp" data-zoom><img src="./assets/lamp-reference-side.webp" width="488" height="591" loading="lazy" alt="Фотореференс карбидной лампы сбоку"></a>
+      <a href="./assets/lamp-reference-front.webp" data-zoom><img src="./assets/lamp-reference-front.webp" width="493" height="591" loading="lazy" alt="Фотореференс карбидной лампы спереди"></a>
+    </div>
+  </section>
+
+  <section class="case-project case-copy">
+    <h2>Subdivision-моделирование и high-poly</h2>
+    <p>Для mid-poly и high-poly построил формы методом subdivision surface и доработал детали в ZBrush. В первых двух кадрах показана high-poly модель в ZBrush, дальше идут виды модели без текстур.</p>
+    <div class="frames lamp-frames">
+      <a href="./assets/lamp-zbrush-rear.webp" data-zoom><img src="./assets/lamp-zbrush-rear.webp" width="1280" height="729" loading="lazy" alt="High-poly карбидной лампы в ZBrush, вид сзади"></a>
+      <a href="./assets/lamp-zbrush-side.webp" data-zoom><img src="./assets/lamp-zbrush-side.webp" width="1160" height="974" loading="lazy" alt="High-poly карбидной лампы в ZBrush, вид сбоку"></a>
+    </div>
+    <div class="frames lamp-frames">
+      <a href="./assets/lamp-model-angle.webp" data-zoom><img src="./assets/lamp-model-angle.webp" width="1800" height="1013" loading="lazy" alt="Модель лампы без текстур в ракурсе три четверти"></a>
+      <a href="./assets/lamp-model-side.webp" data-zoom><img src="./assets/lamp-model-side.webp" width="1800" height="1013" loading="lazy" alt="Модель лампы без текстур сбоку"></a>
+      <a href="./assets/lamp-model-front.webp" data-zoom><img src="./assets/lamp-model-front.webp" width="1800" height="1013" loading="lazy" alt="Модель лампы без текстур спереди"></a>
+    </div>
+  </section>
+
+  <section class="case-project case-copy">
+    <h2>Low-poly, UV и запекание</h2>
+    <p>Дальше применил пайплайн первого кейса. Выполнил ретопологию в 3ds Max, разместил UV в одном тайле в RizomUV и запёк Normal и AO в Marmoset Toolbag. При ретопологии уделил внимание силуэту отражателя и ручки, чтобы сохранить форму в пределах 5 000 треугольников.</p>
+    <div class="frames lamp-frames">
+      <a href="./assets/lamp-mesh.webp" data-zoom><img src="./assets/lamp-mesh.webp" width="1467" height="1192" loading="lazy" alt="Сетка low-poly модели карбидной лампы"></a>
+    </div>
+  </section>
+
+  <section class="case-project case-copy">
+    <h2>Текстуры и финальные рендеры</h2>
+    <p>После сдачи тестового я по собственной инициативе затекстурировал модель и сделал дополнительные рендеры для портфолио. В материалах проработал потёртости, окисление металла и следы эксплуатации.</p>
+    <div class="frames lamp-frames">
+      <a href="./assets/lamp-front.webp" data-zoom><img src="./assets/lamp-front.webp" width="1536" height="1024" loading="lazy" alt="Финальный рендер лампы спереди"></a>
+      <a href="./assets/lamp-side.webp" data-zoom><img src="./assets/lamp-side.webp" width="1536" height="1024" loading="lazy" alt="Финальный рендер лампы сбоку"></a>
+    </div>
+  </section>
+      <nav class="case-pagination" aria-label="Другие кейсы"><a href="./product-visualization.html">Продуктовая визуализация</a><a href="./engineering.html">Инженерно-техническое моделирование</a></nav>
+    </main>
+<footer id="contact">
+  <div class="footer-inner">
+    <h2>Контакты</h2>
+    <div class="contact-links"><a href="mailto:ched70202@gmail.com">ched70202@gmail.com</a><a href="https://t.me/Raz_Grid">Telegram</a></div>
+    <a class="to-top" href="#top">Наверх</a>
+  </div>
+</footer>
+<dialog id="viewer" aria-label="Просмотр работы">
+  <form method="dialog"><button type="submit" aria-label="Закрыть" autofocus>×</button></form>
+  <img alt="">
+  <div class="viewer-controls" role="group" aria-label="Листание изображений">
+    <button type="button" data-viewer-step="-1" aria-label="Предыдущее изображение"><span aria-hidden="true">←</span></button>
+    <output class="viewer-count" aria-live="polite" aria-atomic="true"></output>
+    <button type="button" data-viewer-step="1" aria-label="Следующее изображение"><span aria-hidden="true">→</span></button>
+  </div>
+</dialog>
+</body>
+</html>
