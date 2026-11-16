@@ -16,6 +16,55 @@ img{display:block;max-width:100%}
 nav{display:flex;gap:clamp(.8rem,3vw,2.6rem);font-size:.95rem}
 nav a{text-decoration:none}
 nav a:hover{text-decoration:underline}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  flex: none;
+  gap: clamp(.75rem, 3vw, 1.6rem);
+}
+.language-switch {
+  display: inline-flex;
+  padding: 2px;
+  border: 1px solid var(--line);
+  border-radius: .3rem;
+  background: var(--panel);
+  font-size: .8rem;
+  font-weight: 700;
+}
+.language-switch > * {
+  display: grid;
+  place-items: center;
+  min-width: 2.25rem;
+  min-height: 2rem;
+  padding: .2rem .35rem;
+  border-radius: .15rem;
+}
+.language-switch [aria-current="true"] {
+  background: var(--signal);
+  color: var(--ink);
+}
+.language-switch a {
+  color: var(--paper);
+  text-decoration: none;
+}
+.language-switch a:hover {
+  background: var(--line);
+}
+@media (max-width: 480px) {
+  .top {
+    flex-wrap: wrap;
+    gap: .7rem 1rem;
+  }
+  .header-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .top > nav {
+    order: 1;
+    width: 100%;
+  }
+}
 .hero{position:relative;isolation:isolate;display:grid;align-items:end;min-height:clamp(510px,53vw,740px);background:#1c1d1b;color:white;overflow:hidden}
 .hero img{position:absolute;z-index:-2;width:100%;height:100%;object-fit:cover;object-position:center 35%}
 .hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#101210 2%,#101210ed 20%,#10121030 57%,transparent 80%)}

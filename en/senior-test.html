@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Senior 3D Artist Art Test — Portfolio</title>
+<meta name="description" content="Senior 3D Artist art test: a low-poly carbide lamp, UV layout, and baked normal and AO maps.">
+<meta name="theme-color" content="#0f1012">
+<meta property="og:title" content="Senior 3D Artist Art Test — Portfolio">
+<meta property="og:description" content="Senior 3D Artist art test: a low-poly carbide lamp, UV layout, and baked normal and AO maps.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://positivejake.github.io/raz-grid-portfolio/assets/lamp.webp">
+<link rel="stylesheet" href="../styles.css?v=20261116-languages">
+<script defer src="../gallery.js?v=20261116-gallery"></script>
+<link rel="canonical" href="https://positivejake.github.io/raz-grid-portfolio/en/senior-test.html">
+<link rel="alternate" hreflang="ru" href="https://positivejake.github.io/raz-grid-portfolio/senior-test.html">
+<link rel="alternate" hreflang="en" href="https://positivejake.github.io/raz-grid-portfolio/en/senior-test.html">
+<link rel="alternate" hreflang="x-default" href="https://positivejake.github.io/raz-grid-portfolio/senior-test.html">
+<meta property="og:locale" content="en_US">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top" id="top">
+  <nav aria-label="Main navigation"><a href="./#work">Projects</a><a href="./resume.html">Résumé</a><a href="./#contact">Contact</a></nav>
+  <div class="header-actions">
+    <a href="./" class="brand">RazGrid</a>
+    <div class="language-switch" role="group" aria-label="Site language">
+      <a href="../senior-test.html" lang="ru" hreflang="ru" aria-label="Переключить на русский">RU</a>
+      <span lang="en" aria-current="true">EN</span>
+    </div>
+  </div>
+</header>
+<main id="main" class="section inner-page lamp-case">
+  <a class="back-link" href="./#work">All projects</a>
+  <h1 class="page-title">Carbide Lamp</h1>
+
+  <section class="case-project product-intro">
+    <div class="case-copy">
+      <h2>Senior 3D Artist Art Test</h2>
+      <p>The brief was to model a low-poly carbide lamp from photo references and deliver a normal map and an ambient occlusion map. I delivered the asset on time and met all technical requirements.</p>
+    </div>
+    <div class="product-lead"><a href="../assets/lamp.webp" data-zoom><img src="../assets/lamp.webp" width="1536" height="1024" fetchpriority="high" alt="Final render of the textured carbide lamp"></a></div>
+  </section>
+
+  <section class="case-project case-copy">
+    <h2>Technical requirements</h2>
+    <dl class="lamp-spec">
+      <div><dt>Geometry</dt><dd>Up to 5,000 triangles</dd></div>
+      <div><dt>Texture set</dt><dd>One set at 2048 × 2048</dd></div>
+      <div><dt>Normal Map</dt><dd>OpenGL</dd></div>
+      <div><dt>AO Map</dt><dd>No floor occlusion</dd></div>
+      <div><dt>Backface culling</dt><dd>Enabled</dd></div>
+      <div><dt>Height</dt><dd>20 cm</dd></div>
+      <div><dt>UV layout</dt><dd>One 0–1 tile</dd></div>
+    </dl>
+  </section>
+
+  <section class="case-project case-copy">
+    <h2>Photo references</h2>
+    <p>I used photographs from three angles to reconstruct the body proportions, reflector shape, and smaller details.</p>
+    <div class="frames lamp-frames">
+      <a href="../assets/lamp-reference.webp" data-zoom><img src="../assets/lamp-reference.webp" width="452" height="591" loading="lazy" alt="Carbide lamp photo reference, three-quarter view"></a>
+      <a href="../assets/lamp-reference-side.webp" data-zoom><img src="../assets/lamp-reference-side.webp" width="488" height="591" loading="lazy" alt="Carbide lamp photo reference, side view"></a>
+      <a href="../assets/lamp-reference-front.webp" data-zoom><img src="../assets/lamp-reference-front.webp" width="493" height="591" loading="lazy" alt="Carbide lamp photo reference, front view"></a>
+    </div>
+  </section>
+
+  <section class="case-project case-copy">
+    <h2>Subdivision modeling and high-poly</h2>
+    <p>I built the mid- and high-poly forms using subdivision surface modeling and refined the details in ZBrush. The first two images show the high-poly model in ZBrush, followed by views of the untextured model.</p>
+    <div class="frames lamp-frames">
+      <a href="../assets/lamp-zbrush-rear.webp" data-zoom><img src="../assets/lamp-zbrush-rear.webp" width="1280" height="729" loading="lazy" alt="High-poly carbide lamp in ZBrush, rear view"></a>
+      <a href="../assets/lamp-zbrush-side.webp" data-zoom><img src="../assets/lamp-zbrush-side.webp" width="1160" height="974" loading="lazy" alt="High-poly carbide lamp in ZBrush, side view"></a>
+    </div>
+    <div class="frames lamp-frames">
+      <a href="../assets/lamp-model-angle.webp" data-zoom><img src="../assets/lamp-model-angle.webp" width="1800" height="1013" loading="lazy" alt="Untextured lamp model, three-quarter view"></a>
+      <a href="../assets/lamp-model-side.webp" data-zoom><img src="../assets/lamp-model-side.webp" width="1800" height="1013" loading="lazy" alt="Untextured lamp model, side view"></a>
+      <a href="../assets/lamp-model-front.webp" data-zoom><img src="../assets/lamp-model-front.webp" width="1800" height="1013" loading="lazy" alt="Untextured lamp model, front view"></a>
+    </div>
+  </section>
+
+  <section class="case-project case-copy">
+    <h2>Low-poly, UVs, and baking</h2>
+    <p>I used the same workflow as in my first case study. I retopologized the model in 3ds Max, packed the UVs into one tile in RizomUV, and baked the normal and AO maps in Marmoset Toolbag. During retopology, I focused on keeping the reflector and handle silhouettes intact within the 5,000-triangle budget.</p>
+    <div class="frames lamp-frames">
+      <a href="../assets/lamp-mesh.webp" data-zoom><img src="../assets/lamp-mesh.webp" width="1467" height="1192" loading="lazy" alt="Low-poly carbide lamp wireframe"></a>
+    </div>
+  </section>
+
+  <section class="case-project case-copy">
+    <h2>Textures and final renders</h2>
+    <p>After submitting the test, I textured the model and created extra renders for my portfolio. I added scuffs, metal oxidation, and other signs of use to the materials.</p>
+    <div class="frames lamp-frames">
+      <a href="../assets/lamp-front.webp" data-zoom><img src="../assets/lamp-front.webp" width="1536" height="1024" loading="lazy" alt="Final render of the lamp, front view"></a>
+      <a href="../assets/lamp-side.webp" data-zoom><img src="../assets/lamp-side.webp" width="1536" height="1024" loading="lazy" alt="Final render of the lamp, side view"></a>
+    </div>
+  </section>
+      <nav class="case-pagination" aria-label="Other projects"><a href="./product-visualization.html">Product Visualization</a><a href="./engineering.html">Engineering and CAD Modeling</a></nav>
+    </main>
+<footer id="contact">
+  <div class="footer-inner">
+    <h2>Contact</h2>
+    <div class="contact-links"><a href="mailto:ched70202@gmail.com">ched70202@gmail.com</a><a href="https://t.me/Raz_Grid">Telegram</a></div>
+    <a class="to-top" href="#top">Back to top</a>
+  </div>
+</footer>
+<dialog id="viewer" aria-label="Image viewer">
+  <form method="dialog"><button type="submit" aria-label="Close" autofocus>×</button></form>
+  <img alt="">
+  <div class="viewer-controls" role="group" aria-label="Image navigation">
+    <button type="button" data-viewer-step="-1" aria-label="Previous image"><span aria-hidden="true">←</span></button>
+    <output class="viewer-count" aria-live="polite" aria-atomic="true"></output>
+    <button type="button" data-viewer-step="1" aria-label="Next image"><span aria-hidden="true">→</span></button>
+  </div>
+</dialog>
+</body>
+</html>
